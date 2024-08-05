@@ -80,6 +80,6 @@ cd ./.infrastructure/helm-chart
 
 helm create todoapp
 
-helm install todoapp helm-charts/todoapp
+helm install todoapp helm-chart/todoapp
 
-helm upgrade todoapp helm-charts/todoapp
+helm upgrade todoapp helm-chart/todoapp

@@ -20,19 +20,19 @@ mysql:
     storage: 2Gi
 
     resources:
-        cpu: 500m
-        memory: 1Gi
+      cpu: 500m
+      memory: 1Gi
 
     affinity:
       podAntiAffinity:
-          key: "app"
-          values: mysql
+        key: "app"
+        values: mysql
       nodeAffinity:
         key: "app"
         values: "mysql"
 
     tolerations:
-    - key: "app"
-      operator: "Equal"
-      value: "mysql"
-      effect: "NoSchedule"
+      - key: "app"
+        operator: "Equal"
+        value: "mysql"
+        effect: "NoSchedule"
